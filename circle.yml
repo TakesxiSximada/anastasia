@@ -1,4 +1,8 @@
+
 dependencies:
+  pre:
+    - pip install -U pip
+
   override:
     - pip install -r requirements/docs.txt
 
