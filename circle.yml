@@ -3,6 +3,10 @@ machine:
     version: 3.5.0
 
 dependencies:
+  pre:
+    - git submodule init
+    - git submodule update
+
   override:
     - pip install -r requirements/docs.txt
 
