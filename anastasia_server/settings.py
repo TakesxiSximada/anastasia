@@ -24,7 +24,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'anastasia_server.urls'
+ROOT_URLCONF = 'server.urls'
 
 TEMPLATES = [
     {
@@ -47,7 +47,7 @@ WSGI_APPLICATION = 'anastasia_server.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'var/db', 'anastasia.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'var/db', 'server.sqlite3'),
     }
 }
 
