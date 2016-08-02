@@ -8,7 +8,7 @@ dependencies:
     - git submodule update
 
   override:
-    - pip install vendor/*.whl
+    - pip install ./vendor/*.whl
 
 test:
   override:
