@@ -1,0 +1,7 @@
+dependencies:
+  override:
+    - pip install -r requirements/docs.txt
+
+test:
+  override:
+    - make docs output=$CIRCLE_ARTIFACTS
