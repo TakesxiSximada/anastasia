@@ -38,6 +38,12 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            # Adding this section should work around the issue.
+            # See: https://github.com/pyinstaller/pyinstaller/issues/1717
+            'libraries': {
+                'staticfiles': 'django.templatetags.static',
+                'i18n': 'django.templatetags.i18n',
+            },
         },
     },
 ]
@@ -79,3 +85,4 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
+FRONTEND_DIR = os.path.join(BASE_DIR, 'web/build/')
