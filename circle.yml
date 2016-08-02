@@ -1,8 +1,8 @@
+machine:
+  python:
+    version: 3.5.0
 
 dependencies:
-  pre:
-    - pip install -U pip
-
   override:
     - pip install -r requirements/docs.txt
 
