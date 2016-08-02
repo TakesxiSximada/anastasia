@@ -42,7 +42,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'anastasia_server.wsgi.application'
+WSGI_APPLICATION = 'server.wsgi.application'
 
 DATABASES = {
     'default': {
