@@ -1,0 +1,4 @@
+build:
+  image: takesxisximada/python:3.5
+  commands:
+    - pip install requirements/install.txt
