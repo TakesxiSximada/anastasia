@@ -85,4 +85,4 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-FRONTEND_DIR = os.path.join(BASE_DIR, 'web/build/')
+FRONTEND_DIR = os.path.join(BASE_DIR, 'web/dist/')

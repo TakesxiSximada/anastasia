@@ -1,0 +1,6 @@
+import m from 'mithril'
+
+
+export function top_view(ctrl){ return (
+<h1>test1233</h1>
+)}
